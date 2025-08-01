@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Green Sense | ورود شماره</title>
+    <link rel="stylesheet" href="logstyle.css" />
+    <style>
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="/index.html"><img style="margin-right: 10px;" src="../assets/images/logo.svg" alt="home" /></a>
+        <img src="../assets/images/hamburger.svg" alt="menu" />
+    </nav>
+    <div class="box">
+        <div class="image">
+            <img src="../assets/images/log-in.svg" alt="log-in image" />
+        </div>
+        <div class="content">
+            <h2>خوش آمدید</h2>
+            <p>لطفا شماره موبایل خود را وارد کنید</p>
+            <input id="phone" placeholder="09** **** ****" type="text" maxlength="11" autocomplete="tel" />
+            <button id="confirmBtn" disabled style="cursor: pointer;">تایید</button>
+        </div>
+    </div>
+
+    <script>
+        const phoneInput = document.getElementById("phone");
+        const confirmBtn = document.getElementById("confirmBtn");
+
+        const baseURL = window.location.hostname.includes("localhost")
+            ? "http://localhost:3000"
+            : "https://greensence.onrender.com";
+
+        phoneInput.addEventListener("input", () => {
+            const value = phoneInput.value.trim();
+            const isValid = /^09\d{9}$/.test(value);
+            confirmBtn.disabled = !isValid;
+        });
+
+        async function checkPhone(phone) {
+            try {
+                const res = await fetch(`${baseURL}/check-phone`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ phone }),
+                });
+
+                if (!res.ok) throw new Error("Server responded with status: " + res.status);
+
+                const data = await res.json();
+                console.log("✅ پاسخ سرور:", data);
+
+                localStorage.setItem("currentUserPhone", phone);
+
+                if (data.exists) {
+                    localStorage.setItem("displayName", data.displayName);
+                    window.location.href = "../dashboard/dashboard.html";
+                } else {
+                    window.location.href = "../user-information/user-information.html";
+                }
+
+            } catch (e) {
+                alert("❌ خطا در ارتباط با سرور");
+                console.error("❌ ارتباط با سرور برقرار نشد:", e);
+            }
+        }
+
+        confirmBtn.addEventListener("click", () => {
+            const phone = phoneInput.value.trim();
+            checkPhone(phone);
+        });
+    </script>
+
+
+</body>
+
+</html>
