@@ -1,0 +1,528 @@
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 100;
+    src: url('../assets/fonts/fonts/woff/IRANSansX-Thin.woff') format('woff'),
+        url('../assets/fonts/fonts/woff2/IRANSansX-Thin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 200;
+    src: url('../assets/fonts/fonts/woff/IRANSansX-UltraLight.woff') format('woff'),
+        url('../assets/fonts/fonts/woff2/IRANSansX-UltraLight.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../assets/fonts/fonts/woff/IRANSansX-Light.woff') format('woff'),
+        url('../assets/fonts/fonts/woff2/IRANSansX-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/fonts/woff/IRANSansX-Medium.woff') format('woff'),
+        url('../assets/fonts/fonts/woff2/IRANSansX-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 600;
+    src: url('../assets/fonts/fonts/woff/IRANSansX-DemiBold.woff') format('woff'),
+        url('../assets/fonts/fonts/woff2/IRANSansX-DemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 800;
+    src: url('../assets/fonts/fonts/woff/IRANSansX-ExtraBold.woff') format('woff'),
+        url('../assets/fonts/fonts/woff2/IRANSansX-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../assets/fonts/fonts/woff/IRANSansX-Black.woff') format('woff'),
+        url('../assets/fonts/fonts/woff2/IRANSansX-Black.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 950;
+    src: url('../assets/fonts/fonts/woff/IRANSansX-ExtraBlack.woff') format('woff'),
+        url('../assets/fonts/fonts/woff2/IRANSansX-ExtraBlack.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 1000;
+    src: url('../assets/fonts/fonts/woff/IRANSansX-Heavy.woff') format('woff'),
+        url('../assets/fonts/fonts/woff2/IRANSansX-Heavy.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../assets/fonts/fonts/woff/IRANSansX-Bold.woff') format('woff'),
+        url('../assets/fonts/fonts/woff2/IRANSansX-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/fonts/fonts/woff/IRANSansX-Regular.woff') format('woff'),
+        url('../assets/fonts/fonts/woff2/IRANSansX-Regular.woff2') format('woff2');
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+* {
+    font-family: 'IRANSansX';
+    color: #fff;
+}
+
+input::placeholder {
+    font-family: 'IRANSansX';
+    color: #fff;
+}
+
+span,
+p {
+    direction: rtl;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(#01170A, #117850, #249B57, #249B57, #01170A);
+    width: 98vw;
+}
+
+.menu-con {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    background-color: #1e2a26;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px auto;
+    border-radius: 20px;
+    opacity: 0.9;
+    align-items: center;
+    z-index: 999;
+    bottom: 0px;
+    flex-direction: row;
+    box-shadow: 1px 1px 8px #025A4A;
+    padding: 5px;
+}
+
+.nav-section {
+    width: 60px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.union2 {
+    width: 99px;
+    position: absolute;
+    top: 45px;
+    right: -17px;
+}
+
+.img-menu {
+    width: 30px;
+    height: 30px;
+}
+
+.section1,
+.section2,
+.section3 {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container {
+    display: flex;
+    height: fit-content;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.bot {
+    border-radius: 18px;
+    background-image: linear-gradient(#0A160F, #08100B, #060D08);
+    height: fit-content;
+}
+
+.Ltitle {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    border-bottom: 2px solid #1B261F;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.title {
+    text-shadow: 0px 0px 10px #fff;
+}
+
+.Dbot {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px;
+    width: fit-content;
+    margin: 5px 10px;
+}
+
+.Tbot {
+    margin: 5px 0px;
+    color: #D8FEE5;
+}
+
+.Cbot {
+    color: #7EA18A;
+    font-size: 10px;
+    margin: 5px 0px;
+}
+
+#welcometext {
+    color: #23994D;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px #23994D;
+}
+
+.profile {
+    border-radius: 18px;
+    height: fit-content;
+    background-image: linear-gradient(#0A160F, #08100B, #060D08);
+    width: 350px;
+}
+
+.exit {
+    display: flex;
+    justify-content: start;
+    flex-direction: row-reverse;
+    gap: 5px;
+    padding: 5px 10px;
+}
+
+#exit {
+    color: red;
+}
+
+.name {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.setting {
+    border-radius: 18px;
+    background-image: linear-gradient(#0A160F, #08100B, #060D08);
+    width: 350px;
+}
+
+.switchs {
+    display: flex;
+    align-items: center;
+    padding: 0px 15px 32px 15px;
+    margin: 0px 0px 10px 0px;
+    justify-content: center;
+    gap: 5px;
+    background-image: linear-gradient(#0A160F, #08100B, #060D08);
+}
+
+
+.switch {
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #00ff00;
+}
+
+input:checked+.slider:before {
+    transform: translateX(24px);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.switch-wrapper span {
+    font-size: 15px;
+}
+
+.garden {
+    background-image: linear-gradient(#0A160F, #08100B, #060D08);
+    border-radius: 18px;
+    height: fit-content;
+}
+
+.plant-list {
+    height: 30vh;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.newflower {
+    background-color: #0C17118C;
+    padding: 10px 15px;
+    border: 2px solid #177A3A;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dropdownContainer {
+    background-color: #1d2c1c;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: "Vazirmatn", sans-serif;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    display: flex;
+    align-content: center;
+}
+
+#searchInput {
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    background-color: #1d2c1c;
+    box-sizing: border-box;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.plant-tag {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111;
+    border: 1px solid #0f0;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.plant-tag span {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.plant-tag .light {
+    background: #472ad3;
+}
+
+.plant-tag .humidity {
+    background: #564ce4;
+}
+
+.plant-tag .temp {
+    background: #f7a425;
+}
+
+.plant-tag .trash {
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+}
+
+.plant-tag .name {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+#ezafe {
+    background-color: #1d2c1c !important;
+    outline: none;
+    border: none;
+}
+
+@media (max-width : 1024px) {
+    .section3 {
+        order: 1;
+        height: fit-content;
+    }
+
+    .section2 {
+        order: 2;
+        height: fit-content;
+    }
+
+    .section1 {
+        order: 3;
+    }
+
+    .profile {
+        width: 450px;
+    }
+
+    .logo {
+        top: 40vh;
+        position: fixed;
+        z-index: -1;
+        width: 100vw;
+        left: 0;
+    }
+
+    .center {
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .logo-r {
+        width: 80vw;
+    }
+
+    .G-chart {
+        width: 450px;
+    }
+
+    .setting {
+        width: 450px;
+    }
+
+    .switchs {
+        margin-bottom: 50px;
+    }
+
+    .footer {
+        order: 4;
+        height: 80px;
+    }
+}
+
+@media (max-width : 700px) {
+    .setting {
+        width: 350px;
+    }
+
+    .G-chart {
+        width: 350px;
+    }
+
+    .profile {
+        width: 350px;
+    }
+
+    .garden {
+        width: 350px;
+    }
+
+    .bot {
+        width: 350px;
+    }
+}
+
+@media (max-width : 355px) {
+    .setting {
+        width: 300px;
+    }
+
+    .G-chart {
+        width: 300px;
+    }
+
+    .profile {
+        width: 300px;
+    }
+
+    .garden {
+        width: 300px;
+    }
+
+    .bot {
+        width: 300px;
+    }
+
+    .switch-wrapper span {
+        font-size: 12px;
+    }
+}

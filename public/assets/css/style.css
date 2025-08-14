@@ -11,7 +11,6 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  text-decoration: none;
 }
 
 body {
@@ -52,7 +51,7 @@ h1 {
       #3C764D 0%,
       #8AC69B 44%,
       #C0FFD2 92%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   text-align: center;
@@ -560,6 +559,13 @@ h1 {
   margin-right: 214px;
 }
 
+.slider4 {
+  position: absolute;
+  right: -361px;
+  bottom: 370px;
+}
+
+
 footer {
   display: flex;
   z-index: -1;
@@ -573,86 +579,81 @@ footer {
   font-size: 24px;
 }
 
-.footer-left {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-}
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
 
-.social {
-  margin-bottom: 20px;
-}
+.social{
+    margin-bottom: 30px;
+  }
 
-.text-social {
-  text-align: center;
-  font-size: 30px;
+.text-social{
+    text-align: center;
+    font-size: 30px;
+  }
+  
+.svg-social img{
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    
 }
-.svg-social{
-  display: flex;
-  justify-content: center;
-}
-
-.svg-social img {
-  margin-right: 30px;
-  cursor: pointer;
-  transition: transform 0.5s ease;
-
-}
-
 .svg-social img:hover {
-  transform: scale(1.2);
+    transform: scale(1.2); 
+}
+.contact-us{
+    margin-bottom: 30px;
+}
+.text-contact{
+    text-align: center;
+    font-size: 30px;
+}
+.number{
+    display: flex;
+    justify-content: right;
+}
+.number img{
+}
+.mail{
+    display: flex;
+}
+.mail img{
+    margin-right: 10px;
 }
 
-.text-contact {
-  text-align: center;
-  font-size: 30px;
-}
 
-.number {
-  display: flex;
-  justify-content: right;
+.n-m-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 10px;
 }
-
-.number img {
-  margin-left: 10px;
-}
-
-.mail {
-  display: flex;
-}
-
-.mail img {
-  margin-left: 10px;
-}
-
-.n-m-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-}
-
 .footer-mainn {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   flex: 1;
-}
-
-.footer-right {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  font-size: 20px;
 
 }
 
-.footer-right img {
-  margin-right: 50px;
+.footer-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+  }
+.footer-right img{
+    margin-right: 60px;
 }
-
 .ai-con {
   display: flex;
   height: auto;
@@ -970,13 +971,13 @@ footer {
 
   .svg-social {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
   }
 
   .mail {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 

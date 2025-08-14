@@ -37,9 +37,12 @@
         const phoneInput = document.getElementById("phone");
         const confirmBtn = document.getElementById("confirmBtn");
 
-        const baseURL = window.location.hostname.includes("localhost")
-            ? "http://localhost:3000"
-            : "https://greensence.onrender.com";
+        const isNativeApp = window.location.protocol === 'file:';
+        const baseURL = isNativeApp
+            ? 'https://greensence.onrender.com'
+            : (window.location.hostname.includes("localhost")
+                ? "http://localhost:3000"
+                : "https://greensence.onrender.com");
 
         phoneInput.addEventListener("input", () => {
             const value = phoneInput.value.trim();
@@ -64,7 +67,7 @@
 
                 if (data.exists) {
                     localStorage.setItem("displayName", data.displayName);
-                    window.location.href = "../dashboard/dashboard.html";
+                    window.location.href = "../dashbord/dashboard.html";
                 } else {
                     window.location.href = "../user-information/user-information.html";
                 }

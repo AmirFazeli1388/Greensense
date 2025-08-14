@@ -86,9 +86,12 @@
 
     const currentUserPhone = localStorage.getItem('currentUserPhone');
 
-    const baseURL = window.location.hostname === 'localhost'
-      ? 'http://localhost:3000'
-      : '';
+    const isNativeApp = window.location.protocol === 'file:';
+    const baseURL = isNativeApp
+      ? 'https://greensence.onrender.com'
+      : (window.location.hostname.includes("localhost")
+        ? "http://localhost:3000"
+        : "https://greensence.onrender.com");
 
     if (!currentUserPhone) {
       alert('شماره موبایل یافت نشد، لطفاً دوباره وارد شوید.');
@@ -123,6 +126,7 @@
       checkFormFilled();
     });
 
+    // 📤 ارسال اطلاعات کاربر به سرور
     submitBtn.addEventListener('click', async () => {
       const data = {
         phone: currentUserPhone,
@@ -156,7 +160,7 @@
           localStorage.setItem('displayName', data.displayName);
           overlay.style.display = 'flex';
           setTimeout(() => {
-            window.location.href = '../dashboard/dashboard.html';
+            window.location.href = '../dashbord/dashboard.html';
           }, 1500);
         } else {
           alert('❌ خطا در ثبت اطلاعات');

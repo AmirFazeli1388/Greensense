@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="icon" href="../assets/images/logo.svg" type="image/svg" />
+    <title>GreenSence | Dashboard</title>
+</head>
+
+<body>
+
+    <div class="menu-con">
+        <div class="menu">
+            <a class="nav-section" href="../index.html">
+                <img class="img-menu1 img-menu" src="../assets/images/Home2.svg" alt="home" />
+            </a>
+            <a class="nav-section" href="../about-us/about-us.html">
+                <img class="img-menu" src="../assets/images/team.svg" alt="team" />
+            </a>
+            <a class="nav-section" href="../green-bot/greenbot.html">
+                <img class="img-menu" src="../assets/images/bot.svg" alt="bot" />
+            </a>
+            <a class="nav-section" href="../blog/blog.html">
+                <img class="img-menu" src="../assets/images/blog-svg.svg" alt="blog" />
+            </a>
+            <a class="nav-section" href="../dashboard/dashboard.html">
+                <img class="img-menu" src="../assets/images/profile-user.svg" alt="dashboard" />
+            </a>
+            <img class="union2" src="../assets/images/Union.png" alt="Union" />
+        </div>
+    </div>
+    <div class="center">
+        <div class="container">
+            <!-- This is section one -->
+            <div class="section1">
+                <div class="chart">
+                    <img src="../assets/images/GreenChart.svg" alt="chart" width="350px" class="G-chart">
+                </div>
+                <div class="setting">
+                    <div class="Ltitle">
+                        <p class="title">تحلیل گرین‌بات</p>
+                        <img src="../assets/images/three dot.svg" alt="three dot" width="45px">
+                    </div>
+                    <div class="switchs">
+                        <div class="col">
+                            <div class="switch-wrapper">
+                                <label class="switch">
+                                    <input type="checkbox" />
+                                    <span class="slider"></span>
+                                </label>
+                                <span>کنترل دما</span>
+                            </div>
+                            <div class="switch-wrapper">
+                                <label class="switch">
+                                    <input type="checkbox" />
+                                    <span class="slider"></span>
+                                </label>
+                                <span>تهویه هوشمند</span>
+                            </div>
+                            <div class="switch-wrapper">
+                                <label class="switch">
+                                    <input type="checkbox" />
+                                    <span class="slider"></span>
+                                </label>
+                                <span>تحلیل رشد</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="switch-wrapper">
+                                <label class="switch">
+                                    <input type="checkbox" />
+                                    <span class="slider"></span>
+                                </label>
+                                <span>آبیاری هوشمند</span>
+                            </div>
+                            <div class="switch-wrapper">
+                                <label class="switch">
+                                    <input type="checkbox" />
+                                    <span class="slider"></span>
+                                </label>
+                                <span>نوردهی هوشمند</span>
+                            </div>
+                            <div class="switch-wrapper">
+                                <label class="switch">
+                                    <input type="checkbox" />
+                                    <span class="slider"></span>
+                                </label>
+                                <span>اعلان هشدار</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--This is section two-->
+            <div class="section2">
+                <div class="bot">
+                    <div class="Ltitle">
+                        <p class="title">تحلیل گرین‌بات</p>
+                        <img src="../assets/images/three dot.svg" alt="three dot" width="45px">
+                    </div>
+                    <div class="Dbot">
+                        <img src="../assets/images/Icon Box Glow.svg" alt="iconbot" width="50px">
+                        <div class="contact">
+                            <p class="Tbot">همه‌چیز روبه‌راهه!</p>
+                            <p class="Cbot">گیاهانت در بهترین وضعیت ممکن هستند! 🌿 دما، رطوبت و نور کاملاًایده‌آل‌اند.
+                                <br>
+                                از
+                                طراوت
+                                و رشدشان لذت
+                                ببر!
+                            </p>
+                        </div>
+                        <a href="../green-bot/greenbot.html">
+                            <img src="../assets/images/Frame 37403.svg" alt="reply">
+                        </a>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="../assets/images/logo-no-background 2.svg" alt="logo" width="350" class="logo-r">
+                </div>
+            </div>
+            <!--This is section three-->
+            <div class="section3">
+                <div class="profile">
+                    <div class="Ltitle">
+                        <p class="title">پروفایل باغبان</p>
+                        <img src="../assets/images/three dot.svg" alt="three dot" width="45px">
+                    </div>
+                    <div class="profile1">
+                        <div class="name">
+                            <img src="../assets/images/farmers-photo.svg" alt="profile photo" width="70px">
+                            <p id="welcometext"></p>
+                        </div>
+                        <a href="../index.html">
+                            <div class="exit">
+                                <p id="exit">خروج از حساب</p>
+                                <img src="../assets/images/exit.svg" alt="exit profile">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="garden">
+                    <div class="Ltitle">
+                        <p class="title">باغچه من</p>
+                        <img src="../assets/images/three dot.svg" alt="three dot" width="45px">
+                    </div>
+                    <div class="plant-list" id="plantList"></div>
+                    <div class="button">
+                        <button class="newflower" id="newflower">+ گیاه جدید</button>
+                        <div id="dropdownContainer" style="display:none;">
+                            <input type="text" id="searchInput" placeholder="نام گیاه را وارد کنید "
+                                autocomplete="on" />
+                            <button id="ezafe"><img src="../assets/images/send3.svg" alt="send" width="20" /></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer"></footer>
+
+        </div>
+    </div>
+
+    <script>
+        const displayName = localStorage.getItem("displayName");
+        if (displayName) {
+            document.getElementById("welcometext").textContent = ` ${displayName}`;
+        } else {
+            document.getElementById("welcometext").textContent = "";
+        }
+
+        const dropdownContainer = document.getElementById("dropdownContainer");
+        const newflowerBtn = document.getElementById("newflower");
+        const searchInput = document.getElementById("searchInput");
+        const plantList = document.getElementById("plantList");
+        const ezafeBtn = document.getElementById("ezafe");
+
+        newflowerBtn.addEventListener("click", () => {
+            dropdownContainer.style.display = "block";
+            searchInput.value = "";
+            searchInput.focus();
+        });
+
+        ezafeBtn.addEventListener("click", () => {
+            const plantName = searchInput.value.trim();
+            if (plantName === "") return;
+
+            const tag = document.createElement("div");
+            tag.className = "plant-tag";
+
+            tag.innerHTML = `
+        <span class="trash" onclick="this.parentElement.remove()">🗑</span>
+        <span class="light">نور: ؟</span>
+        <span class="humidity">رطوبت: ؟</span>
+        <span class="temp">دما: ؟</span>
+        <span class="name">${plantName}</span>
+      `;
+
+            plantList.appendChild(tag);
+            dropdownContainer.style.display = "none";
+        });
+
+        searchInput.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+                ezafeBtn.click();
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
