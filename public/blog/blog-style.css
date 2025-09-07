@@ -2,6 +2,13 @@
     font-family: 'iransans';
     src: url(../assets/fonts/IRANSansWeb_Medium.ttf);
 }
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 body {
     font-family: 'iransans';
 }
