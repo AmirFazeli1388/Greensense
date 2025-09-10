@@ -9,7 +9,11 @@ const PORT = process.env.PORT || 3000;
 
 const DATA_FILE = path.resolve(__dirname, 'users.json');
 
-app.use(cors());
+app.use(cors({
+  origin: "*",        
+  methods: ["GET", "POST"], 
+  allowedHeaders: ["Content-Type", "Authorization"] 
+}));
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
