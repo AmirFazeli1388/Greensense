@@ -572,7 +572,7 @@ footer {
   flex-direction: row;
   margin-top: 255px;
   width: 100%;
-  min-height: 600px;
+  height: 700px;
   background: rgba(122, 122, 122, 0.1);
   backdrop-filter: blur(3px);
   border: 1px solid rgba(255, 255, 255, 0.2);
