@@ -611,13 +611,14 @@ footer {
 .text-contact{
     text-align: center;
     font-size: 30px;
+    margin-bottom: -5px;
 }
 .number{
     display: flex;
     justify-content: right;
+    margin-bottom: -26px;
 }
-.number img{
-}
+
 .mail{
     display: flex;
 }

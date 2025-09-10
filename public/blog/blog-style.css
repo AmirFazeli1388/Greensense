@@ -115,11 +115,13 @@ footer {
 .text-contact{
     text-align: center;
     font-size: 30px;
+    margin-bottom: 5px;
 }
 .number{
     display: flex;
     justify-content: right;
     font-size: 20px;
+    margin-bottom: -20px;
 }
 
 .mail{
