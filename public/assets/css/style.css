@@ -39,7 +39,6 @@ nav {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
-  margin-left: -5px;
 }
 
 .svgs {
@@ -782,7 +781,7 @@ footer {
     position: relative;
     margin-top: 0px;
     flex-direction: column;
-    height: 650px;
+    height: 800px;
   }
 
   .slider-home {
